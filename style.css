@@ -4,9 +4,8 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
-    min-height: 100vh
+    min-height: 100vh;
     font-size: 2em;
-
 }
 
 input {

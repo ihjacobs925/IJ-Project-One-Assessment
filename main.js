@@ -9,12 +9,22 @@ function addNum(e) {
     e.preventDefault();
     num += parseInt(input.value);
     display.innerText = num;
+    if (num >= 0) {
+        display.style.color ="black";
+    } else {
+        display.style.color="red";
+    }
 }
 
 function subtractNum(e) {
     e.preventDefault();
     num -= parseInt(input.value);
     display.innerText = num;
+    if (num < 0) {
+        display.style.color="red";
+    } else {
+        display.style.color="black";
+    }
 }
 
 increment.addEventListener('click', (e) => addNum(e));
