@@ -1,21 +1,21 @@
-let add = document.getElementById('increment');
-let minus = document.getElementById('decrement');
-let int = document.getElementById('number');
-let integer = 0;
+let display = document.getElementById("display");
+let input = document.getElementById("num-input");
+let increment = document.getElementById("increment");
+let decrement = document.getElementById("decrement");
 
+let num = 0;
 
-add.addEventListener('click', function() {
-    integer += 1;
-    int.innerHTML = integer;
-});
-
-minus.addEventListener('click', function() {
-    integer -= 1;
-    int.innerHTML = integer;
-});
-
-if (integer < 0) {
-    int.style.color = "red";
-} else {
-    int.style.color = "green";
+function addNum(e) {
+    e.preventDefault();
+    num += parseInt(input.value);
+    display.innerText = num;
 }
+
+function subtractNum(e) {
+    e.preventDefault();
+    num -= parseInt(input.value);
+    display.innerText = num;
+}
+
+increment.addEventListener('click', (e) => addNum(e));
+decrement.addEventListener('click', (e) => subtractNum(e));

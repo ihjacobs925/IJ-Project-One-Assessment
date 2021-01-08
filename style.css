@@ -1,45 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     justify-content: center;
+    min-height: 100vh
+    font-size: 2em;
+
 }
 
-#container {
-    height: 200px;
-    width: 500px;
-}
-
-#number {
-    height: 25px;
-    width: 250px;
-    margin: auto;
-    margin-top: 50px;
+input {
+    border: 2px solid gray;
+    border-radius: 15px;
+    height: 40px;
     text-align: center;
 }
 
-#increment {
-    height: 25px;
-    width: 100px;
-    margin-top: 50px;
-    margin-left: 125px;
+button {
+    border: 2px solid gray;
+    border-radius: 15px;
+    background: gray;
+    color: white;
+    height: 40px;
+    width: 70px
 }
 
-#increment:hover {
-    background-color: green;
+button:hover {
+    background: white;
+    color: gray;
 }
-
-#decrement {
-    height: 25px;
-    width: 100px;
-    margin-top: 50px;
-    margin-left: 50px;
-}
-
-#decrement:hover {
-    background-color: red;
-}
-
